@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<script src="js/jquery-2.1.3.min.js"></script>
+<link rel="stylesheet" href="css/sample.css">
+<title>ラーメン二郎診断</title>
+
+</head>
+<body>
+
+<header>
+  <h1 class="title1">ラーメン</h1>
+  <h1 class="title2">二郎診断</h1>
+</header>
+<div class="titleimg">
+  <img class="ninniku" src="./img/pngegg.png" alt="ラーメン二郎診断">
+  </div>
+
+
+<div class="choose_box">
+      <div class="app-theme">
+        <p>4択に答えると好みの二郎を探せるアプリ(全5問)</p>
+      </div>
+
+
+ <!-- ここから５つ質問を記述 -->
+      <!-- 質問1 -->
+      <div id="q_01" class="fit">
+        <p>質問1: 豚(チャーシュー)は？　</p>
+          <ul>
+          <li><a class="btn" href="#q_02" data-value="a"><img class="awnsersphoto" src="./img/kannai.jpg" alt="こだわりたい"><p>こだわりたい(7)</p></a></li>
+          <li><a class="btn" href="#q_02" data-value="b"><img class="awnsersphoto" src="./img/mita.jpeg"  alt="こだわりたいほうだ"><p>こだわりたいほうだ(4~6)</p></a></li>
+          <li><a class="btn" href="#q_02" data-value="c"><img class="awnsersphoto" src="./img/meguro.jpg" alt="こだわらないほうだ"><p>こだわらないほうだ(2~3)</p></a></li>
+          <li><a class="btn" href="#q_02" data-value="d"><img class="awnsersphoto" src="./img/kabukicho.jpg" alt="こだわらない"><p>こだわらない(1)</p></a></li>
+          </ul>
+      </div>
+
+      <!-- 質問2 -->
+      <div id="q_02" style="display: none;">
+        <p>質問2:スープは？</p>
+        <ul>
+          <li><a class="btn" href="#q_03" data-value="e"><img class="awnsersphoto" src="./img/hibari.jpg" alt="超乳化"><p>超乳化(7)</p></a></li>
+          <li><a class="btn" href="#q_03" data-value="f"><img class="awnsersphoto" src="./img/sakuradai.jpg"  alt="乳化"><p>乳化(5~6)</p></a></li>
+          <li><a class="btn" href="#q_03" data-value="g"><img class="awnsersphoto" src="./img/sapporo.jpg" alt="微醤～ニュートラル"><p>微醤～ニュートラル(2~4)</p></a></li>
+          <li><a class="btn" href="#q_03" data-value="h"><img class="awnsersphoto" src="./img/kaminoge.jpg" alt="超醤"><p>超醤(1)</p></a></li>
+        </ul>
+      </div>
+
+      <!-- 質問3 -->
+      <div id="q_03" style="display: none;">
+        <p>質問3:麺の太さは？</p>
+        <ul>
+          <li><a class="btn" href="#q_04" data-value="i"><img class="awnsersphoto" src="./img/shindaita.jpg" alt="太～極太"><p>太～極太(6~7)</p></a></li>
+          <li><a class="btn" href="#q_04" data-value="j"><img class="awnsersphoto" src="./img/mejirodai.jpeg"  alt="中～微太"><p>中～微太(4~5)</p></a></li>
+          <li><a class="btn" href="#q_04" data-value="k"><img class="awnsersphoto" src="./img/shinagawa.jpg" alt="微細～細"><p>微細～細(2~3)</p></a></li>
+          <li><a class="btn" href="#q_04" data-value="l"><img class="awnsersphoto" src="./img/kameido.jpg" alt="超細"><p>超細(1)</p></a></li>
+        </ul>
+      </div>
+
+
+      <!-- 質問4 -->
+      <div id="q_04" style="display: none;">
+        <p>質問5:麺のゆで加減は？</p>
+        <ul>
+          <li><a class="btn end" data-value="m"><img class="awnsersphoto" src="./img/shindaita.jpg" alt="硬"><p>硬(6~7)</p></a></li>
+          <li><a class="btn end"  data-value="n"><img class="awnsersphoto" src="./img/hibari.jpg"  alt="中～微硬"><p>中～微硬(4~5)</p></a></li>
+          <li><a class="btn end"  data-value="o"><img class="awnsersphoto" src="./img/meguro.jpg" alt="微デロ～デロ"><p>微デロ～デロ(2~3)</p></a></li>
+          <li><a class="btn end"  data-value="p"><img class="awnsersphoto" src="./img/mita.jpeg" alt="超デロ"><p>超デロ(1)</p></a></li>
+        </ul>
+
+      </div>
+
+
+
+<!-- ここから以下回答 -->
+<!-- ここから以下回答 -->
+  <!-- 回答の答え1 -->
+  <div id="answer_01" class="result" style="display: none;">
+    <div class="result_theme ">
+          <p>あなたの好みに当てはまるラーメン二郎は...</p>
+    </div>
+    <div class="result_type0 ">
+          <h4>チャーシューこだわりの二郎へ</h4>
+    </div>
+    <div class="result_discription0">
+      <h2>横浜関内店・西台店</h2>
+      <p>
+        関内は汁なしもおすすめ。西台はブランド豚が最高！<br>
+        <a href="https://tabelog.com/kanagawa/A1401/A140104/14001518/">>横浜関内店の食べログ</a><br>
+        <a href="https://tabelog.com/tokyo/A1322/A132205/13112690/">>西台店の食べログ</a>
+        </p>
+      
+    </div>
+     <div class="return-btn">
+      <a class="return" href="index.html">もどる</a>
+     </div>
+   </div>
+
+
+
+<!-- 回答の答え2 -->
+   <div id="answer_02" style="display: none;">
+        <div class="result_theme ">
+          <p>あなたの好みに当てはまるラーメン二郎は...</p>
+    </div>
+    <div class="result_type1 ">
+          <h4>良いチャーシューと乳化スープはマスト！</h4>
+    </div>
+    <div class="result_discription1">
+      <h2>新潟店/松戸駅前店/荻窪店/ひばりヶ丘駅前店</h2>
+      <p>
+        首都圏在住ならひばりが丘は無理してもいきたい名店<br>
+        <a href="https://tabelog.com/niigata/A1501/A150101/15016019/">>新潟店の食べログ</a><br>
+        <a href="https://tabelog.com/chiba/A1203/A120302/12000236/">>松戸駅前店の食べログ</a><br>
+        <a href="https://tabelog.com/tokyo/A1319/A131906/13006060/">>荻窪店の食べログ</a><br>
+        <a href="https://tabelog.com/tokyo/A1328/A132801/13024745/">>ひばりが丘店の食べログ</a><br>
+      </p>
+    </div>
+     <div class="return-btn">
+      <a class="return" href="index.html">もどる</a>
+     </div>
+   </div>
+
+<!-- 回答の答え3 -->
+<div id="answer_03" style="display: none;">
+  <div class="result_theme ">
+    <p>あなたの好みに当てはまるラーメン二郎は...</p>
+</div>
+<div class="result_type1 ">
+    <h4>良いチャーシューとほどほど乳化スープはマスト！</h4>
+</div>
+<div class="result_discription1">
+<h2>茨城守谷店/八王子野猿街道店2/仙台店/三田本店</h2>
+<p>
+  総本山へのお参りはお忘れなく<br>
+  <a href="https://tabelog.com/ibaraki/A0803/A080301/8008761/">>茨木守谷店の食べログ</a><br>
+  <a href="https://tabelog.com/tokyo/A1329/A132904/13025633/">>八王子野猿街道店2の食べログ</a><br>
+  <a href="https://tabelog.com/miyagi/A0401/A040101/4011894/">>仙台店の食べログ</a><br>
+  <a href="https://tabelog.com/tokyo/A1314/A131402/13006051/">>三田本店</a>の食べログ</a><br>
+</p>
+</div>
+<div class="return-btn">
+<a class="return" href="index.html">もどる</a>
+</div>
+</div>
+
+<!-- 回答の答え4 -->
+<div id="answer_04" style="display: none;">
+  <div class="result_theme ">
+    <p>あなたの好みに当てはまるラーメン二郎は...</p>
+</div>
+<div class="result_type1 ">
+    <h4>良いチャーシューとニュートラルな醤油系スープはマスト！</h4>
+</div>
+<div class="result_discription1">
+<h2>会津若松駅前店/札幌店/神田神保町店/品川店/府中店/めじろ台店/京急川崎店</h2>
+<p>
+  神保町はオフィス街のオアシス
+</p>
+</div>
+<div class="return-btn">
+<a class="return" href="index.html">もどる</a>
+</div>
+</div>
+
+<!-- 回答の答え5 -->
+<div id="answer_05" style="display: none;">
+  <div class="result_theme ">
+    <p>あなたの好みに当てはまるラーメン二郎は...</p>
+</div>
+<div class="result_type1 ">
+    <h4>良いチャーシューとほどほど乳化スープはマスト！</h4>
+</div>
+<div class="result_discription1">
+<h2>京都店/相模大野店/前橋千代田町店/湘南藤沢店/目黒店/栃木街道店/中山駅前店</h2>
+<p>
+  目黒は量もちょうどいい！
+</p>
+</div>
+<div class="return-btn">
+<a class="return" href="index.html">もどる</a>
+</div>
+</div>
+
+<!-- 回答の答え6 -->
+<div id="answer_06" style="display: none;">
+  <div class="result_theme ">
+    <p>あなたの好みに当てはまるラーメン二郎は...</p>
+</div>
+<div class="result_type1 ">
+    <h4>チャーシューなんて関係ない！近くて便利！</h4>
+</div>
+<div class="result_discription1">
+<h2>新宿歌舞伎町店</h2>
+<p>
+  深夜に食べてもヘルシーなのが二郎
+</p>
+</div>
+<div class="return-btn">
+<a class="return" href="index.html">もどる</a>
+</div>
+</div>
+
+
+</div>
+
+ <!-- この辺に回答を記述 -->
+ </div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+
+  <!-- Javascript -->
+<script>
+//ボタンを押すごとに画面が切り替わる関数
+  $(function () {
+
+    $(".btn").on("click", function () {
+      $(this).closest("div").css("display", "none");
+      id = $(this).attr("href");
+      $(id).addClass("fit").fadeIn("slow").show();
+    });
+
+
+ //選択ボタンデータを配列に入れてカウントする関数
+      var countA;
+      var countB;
+      var countC;
+      var countD;
+
+      var countE;
+      var countF;
+      var countG;
+      var countH;
+
+      var countI;
+      var countJ;
+      var countK;
+      var countL;
+
+      var countM;
+      var countN;
+      var countO;
+      var countP;
+      
+      var box =[];
+
+    $(".btn").each(function(){
+      $(this).on('click',function(){
+        var value = $(this).data("value");
+         box.push(value);
+
+        countA = box.filter(function(x){
+                      return x === "a"
+                    }).length;
+        countB = box.filter(function(y){
+                        return y === "b"
+                    }).length;
+        countC = box.filter(function(p){
+                      return p === "c"
+                    }).length;
+        countD = box.filter(function(z){
+                        return z === "d"
+                    }).length;
+
+        
+        countE = box.filter(function(xx){
+                      return xx === "e"
+                    }).length;
+        countF = box.filter(function(yy){
+                        return yy === "f"
+                    }).length;
+        countG = box.filter(function(pp){
+                      return pp === "g"
+                    }).length;
+        countH = box.filter(function(zz){
+                        return zz === "h"
+                    }).length;
+
+        countI = box.filter(function(xxx){
+                      return xxx === "i"
+                    }).length;
+        countJ = box.filter(function(yyy){
+                        return yyy === "j"
+                    }).length;
+        countK = box.filter(function(ppp){
+                      return ppp === "k"
+                    }).length;
+        countL = box.filter(function(zzz){
+                        return zzz === "l"
+                    }).length;
+
+        countM = box.filter(function(xxxx){
+                      return xxxx === "m"
+                    }).length;
+        countN = box.filter(function(yyyy){
+                        return yyyy === "n"
+                    }).length;
+        countO = box.filter(function(pppp){
+                      return pppp === "o"
+                    }).length;
+        countP = box.filter(function(zzzz){
+                        return zzzz === "p"
+                    }).length;
+      });
+    });
+
+
+//結果を出力する関数
+$('.end').on('click',function(){
+      //endクラスをクリックしたときの関数
+      if( countA > countB) { 
+        // チャーシューこだわり7
+        $('#answer_01').css("display",""); //回答1\関内・西台
+      //answer_01のdisplayを""へ
+      } else {
+        if(countB>countC){
+          if (countE>countF){
+          // チャーシューこだわり4-6,乳化スープ7
+          $('#answer_02').css("display",""); //回答2/新潟店/松戸駅前店/荻窪店/ひばりヶ丘駅前店
+          }
+
+          if(countF>countE){
+          // チャーシューこだわり4-6,乳化スープ5-6
+          $('#answer_03').css("display",""); //回答3/茨城守谷店/八王子野猿街道店2/仙台店/三田本店
+          }
+
+          if(countG>countE){
+          // チャーシューこだわり4-6,乳化スープ2-4
+          $('#answer_04').css("display",""); //回答4/会津若松駅前店/札幌店/神田神保町店/品川店/府中店/めじろ台店/京急川崎店
+          }
+          
+          if(countH>countG){
+          // チャーシューこだわり4-6,乳化スープ2-4
+          $('#answer_04').css("display",""); //回答4/会津若松駅前店/札幌店/神田神保町店/品川店/府中店/めじろ台店/京急川崎店
+          }
+        }
+
+          else { if(countC>countD){
+                    // チャーシューこだわり2-3
+                    $('#answer_05').css("display",""); //回答5/京都店/相模大野店/前橋千代田町店/湘南藤沢店/目黒店/栃木街道店/中山駅前店
+                   
+                  
+                  }
+                else {if(countD>countC)
+                 // チャーシューこだわり1
+                 $('#answer_06').css("display",""); //回答6/新宿歌舞伎町店
+
+                }
+                
+                }
+      
+          
+    }
+      
+      }
+        
+        
+)});
+
+  </script>
+</body>
+
+</html>
